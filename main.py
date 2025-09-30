@@ -4,7 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from astropy.table import Table
-from google.colab import drive
+#from google.colab import drive
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor
@@ -21,7 +21,7 @@ def main(config_path):
     # --- Part 0: Setup and Imports ---
     print("--- Part 0: Initializing ---")
     wandb.login()
-    drive.mount('/content/drive')
+    #drive.mount('/content/drive')
     print("✅ Drive mounted.")
 
     # --- Part 1: Load Data and Engineer Features ---
